@@ -29,7 +29,37 @@ It validates critical workflows like **login, product selection, cart management
 ---
 
 ## 📁 Folder Structure
-
+```
+End-to-end_Testing_Cypress/
+│
+├── cypress/
+│   │
+│   ├── e2e/                          # Test Scripts (End-to-End Scenarios)
+│   │   ├── firsttest.cy.js
+│   │   ├── testSaucelabs.cy.js
+│   │   └── .gitignore
+│   │
+│   ├── fixtures/                     # Test Data (credentials, inputs, JSON files)
+│   │
+│   ├── support/
+│   │   ├── commands.js               # Custom Cypress Commands
+│   │   └── e2e.js                    # Test behavior, hooks, configurations
+│   │
+│   └── pages/                        # Page Object Model (POM) Classes
+│       ├── login.js                  # Login Page Elements & Methods
+│       ├── product.js                # Product Page Elements & Methods
+│       ├── cart.js                   # Cart Page Locators & Functions
+│       ├── checkoutOne.js            # Step 1 Checkout Page
+│       ├── checkoutTwo.js            # Step 2 Checkout Page
+│       └── order.js                  # Order Confirmation / Summary Page
+│
+├── node_modules/                     # Installed Dependencies
+│
+├── cypress.config.js                 # Cypress Configuration File
+├── package.json                      # Project Dependencies & Scripts
+├── package-lock.json                 # Auto-generated NPM Lock File
+└── README.md                         # Project Documentation
+```
 
 ---
 
